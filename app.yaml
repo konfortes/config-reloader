@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
       - name: configmaptestapp
-        image: abhirockzz/configmaptestapp
+        image: config-reloader
+        imagePullPolicy: Never
         volumeMounts:
         - mountPath: /config
           name: appconfig-data-volume
